@@ -1,0 +1,20 @@
+<view class="componts">
+  <!-- 日期选择 -->
+  <view class='year'>
+    <picker mode="date" value="{{date}}" start="1970-01" end="2050-12" bindchange="chooseMonth" fields="month">
+      <text>{{now_year_month}}</text>
+    </picker>
+  </view>
+  <!-- 固定格式 -->
+  <view class="week">
+    <block wx:for="{{week}}" wx:key="index">
+      <text>{{item}}</text>
+    </block>
+  </view>
+  <!-- 时间 -->
+  <view class="day" bindtouchstart='touch_start' bindtouchend='touch_end'>
+    <block wx:for="{{day}}" wx:key="index">
+      <text bindtap='tap_style' data-now='{{item}}' class="normal {{check === item ? 'tap_style' : ''}}">{{item != 0 ? item : ''}}</text>
+    </block>
+  </view>
+</view>

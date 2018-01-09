@@ -1,0 +1,40 @@
+/**index.wxss**/
+.componts{
+  padding: 30rpx;
+}
+.year{
+  display: flex;
+  flex-flow: row;
+  flex-wrap:nowrap;
+  justify-content: center;
+  color:crimson;  
+}
+.week{
+  display: flex;
+  flex-flow: row;
+  flex-wrap:nowrap;
+}
+.week text{
+  width: 120rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  color:crimson;
+}
+.day{
+  display: flex;
+  flex-flow: row;
+  flex-wrap:wrap; 
+}
+.day text{
+  width: 98rpx;
+  height: 98rpx;
+  line-height: 98rpx;
+  text-align: center;
+}
+.tap_style{
+  color:crimson;
+}
+/* .normal{
+  background-color: red;
+} */
