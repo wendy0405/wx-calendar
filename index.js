@@ -11,7 +11,7 @@ Page({
     now_year_month:'1970年1月',
     week: ['日', '一', '二', '三', '四', '五', '六'],
     day: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31],
-    check:null,
+    check:'',
     date:'1970-01'
   },
   onLoad:function() {
@@ -38,9 +38,11 @@ Page({
   //点击事件--
   tap_style:function(e) {
     let now_id = e.currentTarget.dataset.now;
-    this.setData({
-      check:now_id
-    })
+    if(now_id > 0) {
+      this.setData({
+        check: now_id
+      })      
+    }
   },
   //左滑右滑
   touch_start:function(e) {

@@ -1,7 +1,7 @@
 /**index.wxss**/
-.componts{
-  padding: 30rpx;
-}
+ .componts{
+  padding: 50rpx;
+} 
 .year{
   display: flex;
   flex-flow: row;
@@ -13,28 +13,35 @@
   display: flex;
   flex-flow: row;
   flex-wrap:nowrap;
+  width: 560rpx;
+  margin-left: auto;
+  margin-right: auto; 
 }
 .week text{
-  width: 120rpx;
-  height: 120rpx;
-  line-height: 120rpx;
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
   text-align: center;
   color:crimson;
 }
 .day{
   display: flex;
   flex-flow: row;
-  flex-wrap:wrap; 
+  flex-wrap:wrap;
+  width: 560rpx;
+  margin-left: auto;
+  margin-right: auto;  
 }
 .day text{
-  width: 98rpx;
-  height: 98rpx;
-  line-height: 98rpx;
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
   text-align: center;
+  font-size: 18px;
 }
 .tap_style{
-  color:crimson;
+  /* color:crimson; */
+  border-radius: 50%;
+  background-color: crimson;
+  color:#fff;
 }
-/* .normal{
-  background-color: red;
-} */
